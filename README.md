@@ -1,2 +1,2 @@
 # FriendFinder
-A full-stack site that utilizes compatibility features, images, and a survey, creating a dating app.
+A full-stack site utilizing Express and Node with compatibility features, images, and a survey, creating a dating app.
