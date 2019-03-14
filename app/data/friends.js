@@ -11,7 +11,7 @@ var matches = [
         1,
         3,
         5,
-        3,
+        4,
         5,
         1
     ]
@@ -45,7 +45,7 @@ var matches = [
         1,
         2,
         3,
-        1,
+        5,
         3,
         1
       ]
@@ -62,7 +62,7 @@ var matches = [
         4,
         3,
         4,
-        2,
+        5,
         2,
         1
       ]
@@ -79,7 +79,7 @@ var matches = [
         5,
         4,
         2,
-        4,
+        1,
         3,
         5
       ]
@@ -96,7 +96,7 @@ var matches = [
         2,
         4,
         4,
-        2,
+        5,
         5,
         1
       ]
@@ -113,7 +113,7 @@ var matches = [
         5,
         2,
         1,
-        1,
+        2,
         1,
         5
       ]
@@ -147,7 +147,7 @@ var matches = [
         5,
         1,
         1,
-        1,
+        4,
         1,
         5
       ]
@@ -171,5 +171,5 @@ var matches = [
 }
 ]
 
-// Exports the matches array to other files //
+// Exports the matches array to files //
 module.exports = matches;
