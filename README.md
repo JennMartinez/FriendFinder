@@ -1,2 +1,2 @@
 # FriendFinder
-A full-stack site utilizing Express and Node with compatibility features, images, and a survey, creating a dating app.
+A full-stack dating app utilizing Express package for Node with compatibility features, images, and a survey, creating a match based on personality. Heroku is utilized for deployment.
