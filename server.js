@@ -8,8 +8,8 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 // Routes to extract data //
-require("./app/routing/htmlRoutes.js")(app);
-require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
 
 // Sets bodyParser to handle data parsing //
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -19,5 +19,5 @@ app.use(bodyParser.json({ type: "application/vnd.api+json"}));
 
 // Starts the server to listen on PORT //
 app.listen(PORT, function() {
-    console.log("Friend Finder listening on PORT " + PORT);
+    console.log("Love Finder listening on PORT " + PORT);
 });
