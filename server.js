@@ -5,7 +5,7 @@ var bodyParser = require("body-parser");
 
 // Express App and port for Local Host //
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8080;
 
 // Routes to extract data //
 require("./app/routing/htmlRoutes")(app);

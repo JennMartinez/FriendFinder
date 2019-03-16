@@ -13,6 +13,7 @@ app.get("/api/friends", function(req, res) {
 // Determines results from the survery based on the request from user response //
 app.post("/api/friends", function(req, res) {
     var userAnswers = req.body.scores;
+    console.log(req);
     var comparison = [];
     var totalDifference = 0;
     var friendMatch = 0;
