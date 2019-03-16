@@ -161,7 +161,6 @@
         <hr>
         <button type="submit" class="btn btn-primary-secondary btn-lg btn-block btn-outline-dark text-warning" id="submit">Submit Survey</button>
         <hr>
-<!-- Submit -->
         <footer class="footer">
             <div class="container">
                 <p><a href="/api/friends" class="text-warning">API Friend List</a> | <a href="https://github.com/JennMartinez/FriendFinder" class="text-warning">GitHub Repo</a></p>
@@ -169,10 +168,8 @@
         </footer>
     </div>
     
-<!-- Modal -->
     <div id="friendResults" class="modal fade" role="dialog">
         <div class="modal-dialog">
-<!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">×</button>
@@ -191,11 +188,8 @@
     </div>
 
     <script type="text/javascript">
-
-// Capture the form inputs
+    
         $("#submit").on("click", function () {
-           
-// Create an object for the user"s data
             var userData = {
                 name: $("#name").val().trim(),
                 photo: $("#photo").val().trim(),
@@ -213,12 +207,9 @@
                 ]
             };
             var site = window.location.origin;
-// AJAX post the data to the friends API.
             $.post(site + "/api/friends", userData, function(data) {
-// Grab the result from the AJAX post so that the best match's name and photo are displayed.
                 $("#friendName").text(data.name);
                 $("#friendImage").attr("src", data.photo);
-// Show the modal with the best match
                 $("#friendResults").modal("toggle");
             });
             return false
