@@ -19,5 +19,5 @@ app.use(bodyParser.json({ type: "application/vnd.api+json"}));
 
 // Starts the server to listen on PORT //
 app.listen(PORT, function() {
-    console.log("Love Finder listening on PORT " + PORT);
+    console.log("Friend Finder listening on PORT " + PORT);
 });
