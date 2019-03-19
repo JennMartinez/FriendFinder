@@ -5,7 +5,7 @@
 
 - The Friend Finder Survey presents 10 questions. Each question has a dropdown menu with the answers 1-5.
                                             
-                     1 (Strongly Disagree) to 5 (Strongly Agree)
+                                1 (Strongly Disagree) to 5 (Strongly Agree)
 
 - Once the user has answered all 10 questions, they are to submit the survey. The survey will calculate their score based on their answers. Their score will be matched with a friend that will appear on the screen. 
 
