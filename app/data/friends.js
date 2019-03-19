@@ -98,7 +98,7 @@ var friends = [
 // },
 {
     "name" : "Lord Voldemort",
-    "photo" : "http://media.theindependent.sg/wp-content/uploads/2017/08/voldemort-696x464.jpg",
+    "photo" : "https://s3.r29static.com//bin/entry/c97/x,80/1697267/image.jpg",
     "scores" : [
         "2",
         "2",
