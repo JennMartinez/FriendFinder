@@ -13,6 +13,6 @@
                                 
 https://fast-sierra-65678.herokuapp.com/
 
-**Below is a screenshot of the initial page to the survey.**
+**Below is a screenshot of the homepage to the survey.**
 
-![Image of survey](assets/images/initial.png)
+![Image of homepage_survey](assets/images/initial.png)
