@@ -12,25 +12,26 @@ app.get("/api/friends", function(req, res) {
 
 // Determines results from the survery based on the request from user response //
 app.post("/api/friends", function(req, res) {
-    var userAnswers = req.body.scores;
-    console.log(req);
-    var comparison = [];
+    var friendMatch = { name: "", photo: "", comparison: 100 }
+    var userAnswers = req.body;
+    console.log(req.body);
     var totalDifference = 0;
-    var friendMatch = 0;
     
     for (var i = 0; i < participants.length; i++) {
-        for (var j = 0; j < userAnswers.length; j++) {
-            var scoring = Math.abs(participants[i].scores[j] - userAnswers[j]);
+        totalDifference = 0;
+        for (var j = 0; j < participants[i].scores.length; j++) {
+            var scoring = Math.abs(userAnswers.scores[j] - participants[i].scores[j]);
             totalDifference += scoring;
+
+            if (totalDifference <= friendMatch.comparison) {
+                friendMatch.name = participants[i].name,
+                friendMatch.photo = participants[i].photo,
+                friendMatch.comparison = totalDifference 
+            }
         }
-        comparison.push(totalDifference);
-    }
-    for (var i = 0; i < comparison.length; i++) {
-        if (comparison[i] <= comparison[friendMatch]) {
-            friendMatch = i;
-        }
-    }
-    res.json(participants[friendMatch]);
-    participants.push(req.body);
+    }    
+res.json(friendMatch);
+participants.push(userAnswers);
+    
   });
 };

@@ -7,15 +7,15 @@ var bodyParser = require("body-parser");
 var app = express();
 var PORT = process.env.PORT || 8080;
 
-// Routes to extract data //
-require("./app/routing/htmlRoutes")(app);
-require("./app/routing/apiRoutes")(app);
-
 // Sets bodyParser to handle data parsing //
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json"}));
+
+// Routes to extract data //
+require("./app/routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
 
 // Starts the server to listen on PORT //
 app.listen(PORT, function() {
